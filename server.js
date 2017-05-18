@@ -149,28 +149,32 @@ app.get('/api/categories', function (req, res) {
 
 // make the mongo query/call to find all users that have that category that the user is searching for.
   var dataFound = [{
+        name: "bookkeeping",
+        title: "Accounting"
+      },
+      {
         name: "music",
-        title: "Music Lessons (EX: Guitar, Piano)"
+        title: "Music Lessons"
       },
       {
         name: "landscaping",
-        title: "Gardening"
+        title: "Landscaping"
       },
       {  
         name: "cooking",
-        title: "Baking / Cooking"
+        title: "Baking, Catering, & Cooking"
       },
       {
         name: "computers",
-        title: "Coding / UI Design" 
+        title: "Web Development/Maintenance" 
       },
       {
         name: "repairs",
-        title: "Build / Constructing"
+        title: "General Repair"
       },
       {
        name: "sports",
-       title: "Sports Lessons (EX: Tennis, Golf)"
+       title: "Exercise & Coaching"
       }
       ];
   res.json(dataFound); 
